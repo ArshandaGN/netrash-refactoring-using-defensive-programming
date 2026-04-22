@@ -135,7 +135,7 @@ function Bsu() {
   async function onSubmit(value) {
     setIsSubmitLoading(true);
     const pengurus = value.pengurus;
-    listPengurus.map((item, index) => {
+    listPengurus.forEach((item, index) => {
       pengurus[index].jabatan = item;
     });
     const tmpData = {
